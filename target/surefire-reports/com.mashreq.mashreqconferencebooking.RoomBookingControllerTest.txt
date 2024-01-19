@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.mashreq.mashreqconferencebooking.RoomBookingControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.894 s <<< FAILURE! -- in com.mashreq.mashreqconferencebooking.RoomBookingControllerTest
+com.mashreq.mashreqconferencebooking.RoomBookingControllerTest.testShouldBeAbleToMaintenanceMessage -- Time elapsed: 0.006 s <<< ERROR!
+java.time.DateTimeException: Conference Room Booking Under Maintenance. 9:00 - 9:15 OR 13:00 - 13:15 OR 17:00 - 17:15 Booking Not Possible, Please select different slots
+	at com.mashreq.mashreqconferencebooking.service.RoomBookingService.findRoom(RoomBookingService.java:100)
+	at com.mashreq.mashreqconferencebooking.controller.RoomBookingController.findRoom(RoomBookingController.java:22)
+	at com.mashreq.mashreqconferencebooking.RoomBookingControllerTest.testShouldBeAbleToMaintenanceMessage(RoomBookingControllerTest.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
